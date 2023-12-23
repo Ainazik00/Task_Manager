@@ -1,4 +1,4 @@
-package com.example.task_manager.ui.onBoarding
+package com.example.task_manager.ui.onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.task_manager.R
 import com.example.task_manager.databinding.FragmentOnBoardingBinding
-import com.example.task_manager.ui.onBoarding.adapter.OnBoardingAdapter
+import com.example.task_manager.ui.onboarding.adapter.OnBoardingAdapter
 
 class onBoardingFragment : Fragment() {
     private lateinit var binding: FragmentOnBoardingBinding
