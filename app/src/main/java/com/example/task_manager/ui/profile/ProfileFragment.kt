@@ -42,8 +42,8 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.userNamePr.setText(pref.getName())
         binding.userNamePr.addTextChangedListener {
-            binding.userNamePr.setText(pref.getName())
             pref.saveUserName(binding.userNamePr.text.toString())
         }
         val imageUri = pref.getImage()
