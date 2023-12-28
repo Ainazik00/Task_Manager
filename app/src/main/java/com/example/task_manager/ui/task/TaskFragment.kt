@@ -1,14 +1,13 @@
 package com.example.task_manager.ui.task
 
+import android.app.AlertDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
-import androidx.fragment.app.setFragmentResult
 import androidx.navigation.fragment.findNavController
-import com.example.task_manager.R
+import com.example.task_manager.App
 import com.example.task_manager.databinding.FragmentTaskBinding
 import com.example.task_manager.model.Task
 
@@ -30,7 +29,7 @@ class TaskFragment : Fragment() {
                 title = binding.etTitle.text.toString(),
                 desc = binding.etDesc.text.toString()
             )
-            setFragmentResult(TASK_REQUEST_KEY, bundleOf(TASK_KEY to task))
+            App.db.taskDao().insert(task)
             findNavController().navigateUp()
         }
     }

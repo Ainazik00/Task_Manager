@@ -5,14 +5,9 @@ import android.content.Context
 class Pref(context: Context) {
     private val pref = context.getSharedPreferences(PREF_NAME,Context.MODE_PRIVATE)
 
-    fun saveImage( imageUri: String) {
-        pref.edit().putString(IMAGE_URL_KEY,imageUri).apply()
-    }
-
     fun getImage(): String? {
         return pref.getString(IMAGE_URL_KEY, null)
     }
-
 
     fun saveUserName(name: String) {
         pref.edit().putString(USERNAME_KEY, name).apply()
