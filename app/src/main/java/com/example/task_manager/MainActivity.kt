@@ -52,7 +52,9 @@ class MainActivity : AppCompatActivity() {
                 supportActionBar?.show()
             }
         }
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
 }

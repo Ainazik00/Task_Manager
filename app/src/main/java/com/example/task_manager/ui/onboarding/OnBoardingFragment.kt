@@ -11,12 +11,14 @@ import com.example.task_manager.data.local.Pref
 import com.example.task_manager.databinding.FragmentOnBoardingBinding
 import com.example.task_manager.ui.onboarding.adapter.OnBoardingAdapter
 
-class onBoardingFragment : Fragment() {
+class OnBoardingFragment : Fragment() {
+
     private lateinit var binding: FragmentOnBoardingBinding
     private val adapter = OnBoardingAdapter(this::onClick)
     private val pref: Pref by lazy {
         Pref(requireContext())
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,4 +37,5 @@ class onBoardingFragment : Fragment() {
         pref.onBoardingShowed()
         findNavController().navigate(R.id.navigation_home)
     }
+
 }

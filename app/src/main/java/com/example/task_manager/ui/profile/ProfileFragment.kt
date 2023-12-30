@@ -18,13 +18,12 @@ import com.example.task_manager.databinding.FragmentProfileBinding
 
 
 class ProfileFragment : Fragment() {
+
     private var _binding: FragmentProfileBinding? = null
     private val pref: Pref by lazy {
         Pref(requireContext())
     }
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -68,4 +67,5 @@ class ProfileFragment : Fragment() {
             Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         startActivityForResult(galleryIntent, GALLERY_REQUEST_CODE)
     }
+
 }

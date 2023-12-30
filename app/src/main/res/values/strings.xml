@@ -7,7 +7,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name">Введите имя</string>
     <string name="no">Нет</string>
-    <string name="Yes">Да</string>
-    <string name="delete_desc">Вы точно хотите удалить ? %1$s?</string>
-    <string name="delete_title">Удалить</string>
+    <string name="delete">Delete ?</string>
+    <string name="delete_it">Are you sure you want to delete it ?</string>
+    <string name="yes">Yes</string>
 </resources>
