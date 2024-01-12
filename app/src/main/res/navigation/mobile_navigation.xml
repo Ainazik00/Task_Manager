@@ -37,5 +37,15 @@
         android:name="com.example.task_manager.ui.onboarding.OnBoardingFragment"
         android:label="fragment_on_boarding"
         tools:layout="@layout/fragment_on_boarding" />
+ <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.example.task_manager.ui.auth.phone.PhoneFragment"
+        android:label="Phone"
+        tools:layout="@layout/fragment_phone" />
+ <fragment
+        android:id="@+id/verifyFragment"
+        android:name="com.example.task_manager.ui.auth.verify.VerifyFragment"
+        android:label="Verify"
+        tools:layout="@layout/fragment_verify" />
 
 </navigation>

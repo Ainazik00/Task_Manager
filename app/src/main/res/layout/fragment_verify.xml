@@ -10,39 +10,17 @@
     tools:context=".ui.profile.ProfileFragment">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_film"
+        android:id="@+id/til_code"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_film"
+            android:id="@+id/et_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/film"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_director"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_director"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/director"
+            android:hint="@string/code"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,10 +29,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_save"
+        android:id="@+id/btn_verify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/verify_code"
         android:layout_marginTop="16dp"
-        android:text="@string/save" />
+        />
 
 </LinearLayout>

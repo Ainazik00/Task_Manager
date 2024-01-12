@@ -11,4 +11,13 @@
     <string name="delete_it">Are you sure you want to delete it ?</string>
     <string name="yes">Yes</string>
     <string name="update">update</string>
+    <string name="Name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="code">Code</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="send_code">Send Code</string>
+    <string name="save">save</string>
+    <string name="director">Director</string>
+    <string name="film">Film</string>
+    <string name="success_msg">Вы успешно сохранили фильм !</string>
 </resources>

@@ -46,23 +46,23 @@ class OnBoardingAdapter(private val onClick: () -> Unit) :
     }
 
     override fun onBindViewHolder(holder: OnBoardingViewHolder, position: Int) {
-        holder.bind(list.get(position))
+        holder.bind(list[position])
     }
 
     inner class OnBoardingViewHolder(private val binding: ItemOnboardingBinding) :
         ViewHolder(binding.root) {
-        fun bind(onBoarding: OnBoarding) = with(binding) {
-            tvTitle.text = onBoarding.title
-            tvDesc.text = onBoarding.desc
-            ivBoard.loadImage(onBoarding.image)
-            skip.setOnClickListener {
+        fun bind(onBoarding: OnBoarding){
+            binding.tvTitle.text = onBoarding.title
+            binding.tvDesc.text = onBoarding.desc
+            binding.ivBoard.loadImage(onBoarding.image)
+            binding.skip.isVisible = adapterPosition != list.lastIndex
+            binding.btnStart.isVisible = adapterPosition == list.lastIndex
+            binding.skip.setOnClickListener {
                 onClick()
             }
-            btnStart.setOnClickListener {
+            binding.btnStart.setOnClickListener {
                 onClick()
             }
-            skip.isInvisible = adapterPosition != list.lastIndex
-            btnStart.isVisible = adapterPosition == list.lastIndex
         }
     }
 
